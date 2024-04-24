@@ -42,7 +42,7 @@
   opacity: 0.5;
 }
 
-.bg-css, .bg-css-repeat {
+.bg-css, .bg-css-repeat, .bg-css-fixed {
   background-image: url("bg-css.webp");
   height: 300px;
   /* Escalamos al tamaño del elemento: */
@@ -54,7 +54,7 @@
   align-items: end;
   justify-content: center;
 }
-.bg-css > p, .bg-css-repeat > p {
+.bg-css > p, .bg-css-repeat > p, .bg-css-fixed > p {
   text-align: center;
   color: white;
   text-transform: capitalize;
@@ -71,12 +71,15 @@
   /* Repeat solo en eje horizontal: */
   background-repeat: repeat-x;
 }
-.bg-css-repeat > p {
+
+/* bg repeat */
+
+.bg-css-repeat > p, .bg-css-fixed > p {
   color: rgb(255, 255, 255);
 
   /* Este background hace que el contraste del color de letra con la imagen sea mejor, le añado opacidad para que el color no sea tan fuerte: */
   background-color: rgba(0, 0, 0, 0.65);
-  
+
   text-decoration: none;
   padding: 20px;
   padding-top: 25px;
@@ -93,7 +96,34 @@
   line-height: 40px;
 }
 
-.bg-css-repeat a {
+.bg-css-repeat a, .bg-css-fixed a {
   border: none;
   color: skyblue;
 }
+
+/********** 
+  bg fixed 
+ *********/
+
+ .bg-css-fixed {
+  height: 1000px;
+  background-position: right bottom;
+  /* Esta propiedad es la base del efecto de parallax: */
+  /* https://blog.hubspot.es/website/efecto-parallax */
+  /* Codepen: 
+   - https://codepen.io/olgavegh/pen/jORxEzG
+   - https://codepen.io/tag/parallax
+  */
+  background-attachment: fixed;
+  align-items: center;
+ }
+
+ .bg-css-atajo {
+  height: 1000px;
+  background-color: #ffffff;
+  background-image: url("bg-css.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* Equivale a: */
+  background: #ffffff url("bg-css.webp") no-repeat center center;
+ }
