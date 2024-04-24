@@ -42,7 +42,7 @@
   opacity: 0.5;
 }
 
-.bg-css{
+.bg-css, .bg-css-repeat {
   background-image: url("bg-css.webp");
   height: 300px;
   /* Escalamos al tamaño del elemento: */
@@ -54,11 +54,46 @@
   align-items: end;
   justify-content: center;
 }
-.bg-css > p {
+.bg-css > p, .bg-css-repeat > p {
   text-align: center;
   color: white;
   text-transform: capitalize;
   text-decoration: underline;
   /* Solo para maquetación: */
   /* border: 1px solid black; */
+}
+
+/* Estilos específicos de .bg-css-repeat: */
+
+.bg-css-repeat {
+  background-image: url("css-small.png");
+  background-size: contain;
+  /* Repeat solo en eje horizontal: */
+  background-repeat: repeat-x;
+}
+.bg-css-repeat > p {
+  color: rgb(255, 255, 255);
+
+  /* Este background hace que el contraste del color de letra con la imagen sea mejor, le añado opacidad para que el color no sea tan fuerte: */
+  background-color: rgba(0, 0, 0, 0.65);
+  
+  text-decoration: none;
+  padding: 20px;
+  padding-top: 25px;
+  
+  /* Nota: para que se respete el alto o ancho que colocamos a pesar del padding, se puede usar esta opción: */
+  box-sizing: border-box;
+  /* ------------------ */
+
+  margin-bottom: 0;
+  width: 100%;
+  height: 100px;
+
+  /* Cambio la altura de línea para centrar mejor en vertical el texto del p: */
+  line-height: 40px;
+}
+
+.bg-css-repeat a {
+  border: none;
+  color: skyblue;
 }
