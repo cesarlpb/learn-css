@@ -1,0 +1,47 @@
+/* Hoja de estilos comunes para todas las páginas */
+
+/* El selector universal se debe usar solo para las pocas propiedades que puedan aplicar a "todos" los elementos. Cualquier selector lo sobreescribe al ser más específico: */
+* {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  /* Reseteamos espaciados por defecto de los elementos que envuelven todo el documento: */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 10px; /* Sobreescribe la línea 6 anterior */
+  background-color: rgb(234, 218, 198);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: brown;
+  border: 2px solid rgb(191, 115, 115, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: rgb(165, 42, 42, 0.9);
+}
+
+pre, code {
+  background-color: lightgray;
+}
+#uno {
+  background-color: black;
+  color: white;
+}
