@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectores</title>
+  <link rel="stylesheet" href="01.selectores.css">
+</head>
+<body>
+  <h1>Selectores</h1>
+  <p>Tipos principales de selectores:</p>
+  <ul>
+    <li><a href="#tags">Etiquetas</a></li>
+    <li><a href="#clases">Clases</a></li>
+    <li><a href="#ids">Ids</a></li>
+    <li><a href="#otros">Otros</a></li>
+  </ul>
+
+  <hr>
+
+  <h2 id="tags">Etiquetas</h2>
+  <p>Todas las etiquetas de HTML se pueden usar como selectores:</p>
+  <pre>
+    <code>
+      p {
+        color: red;
+        text-align: center;
+      }</code>
+  </pre>
+  <h2 id="clases">Clases</h2>
+  <p>El selector de clase empieza por por punto: <code>.clase {...}</code>:</p>
+  <pre>
+    <code>
+      .clase {
+        color: red;
+        text-align: center;
+      }</code>
+  </pre>
+  <h2 id="ids">Ids</h2>
+  <p>El selector de id empieza por por #: <code>#id {...}</code>:</p>
+  <pre>
+    <code>
+      #id {
+        color: red;
+        text-align: center;
+      }</code>
+  </pre>
+  <h2 id="otros">Otros</h2>
+  <h3>Varias clases</h3>
+  <p>Para seleccionar varias clases o elementos se separa con comas <code>,</code>:</p>
+  <pre>
+    <code>
+      p, h1, .clase {
+        color: red;
+        text-align: center;
+      }</code>
+  </pre>
+  <h3>Parent-child</h3>
+  <p>Para seleccionar child directo (elemento hijo) de otro elemento (parent) se usa <code>></code>:</p>
+  <pre>
+    <code>
+      /* Selecciona el &lt;p&gt; dentro de un &lt;div&gt; */
+      div > p {
+        color: red;
+        text-align: center;
+      }
+
+      HTML:
+
+      &lt;div&gt;
+        &lt;p&gt;
+          ...
+        &lt;/p&gt;
+      &lt;/div&gt;</code>
+  </pre>
+  <h3>Etiqueta con clase</h3>
+  <p>Para seleccionar una etiqueta de una clase determinada se coloca el selector de clase seguido de la etiqueta:</p>
+  <pre>
+    <code>
+      /* Selecciona los &lt;p&gt; de la clase "clase": */
+      p.clase {
+        color: red;
+        text-align: center;
+      }</code>
+  </pre>
+</body>
+</html>
