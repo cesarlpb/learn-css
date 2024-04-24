@@ -1,5 +1,10 @@
 /* Selectores */
 
+/* El selector universal se debe usar solo para las pocas propiedades que puedan aplicar a "todos" los elementos. Cualquier selector lo sobreescribe al ser más específico: */
+* {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 html, body {
   /* Reseteamos espaciados por defecto de los elementos que envuelven todo el documento: */
   padding: 0;
