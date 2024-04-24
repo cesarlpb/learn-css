@@ -17,6 +17,15 @@ No solo sirve para web, también se puede usar para colocar los estilos de otros
 
 ![alt text](image.png)
 
+Ejemplo de sintaxis CSS aplicado a un `<p>`:
+
+```css
+  p {
+    color: red;
+    text-align: center;
+  }
+```
+
 ---
 
 Contenido basado en el itinerario de CSS de W3Schools: https://www.w3schools.com/css/default.asp
