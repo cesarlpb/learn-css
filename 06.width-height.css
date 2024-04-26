@@ -1,2 +1,23 @@
 /* width y height */
 
+div {
+  border: 1px solid brown;
+  box-sizing: border-box;
+  margin: 10px 0;
+  /* display: inline-block; */
+}
+
+/* ancho y alto fijos: */
+.div-1{
+  width: 300px;
+  height: 100px;
+}
+.div-2 {
+  max-width: 300px;
+  /* El ancho máximo es 300px */
+  width: 400px;
+  min-height: 100px;
+  /* Aunque se le ponga menos height, min-height nos "asegura" 
+  que el elemento no sea más pequeño que cierto valor: */
+  height: 50px;
+}
