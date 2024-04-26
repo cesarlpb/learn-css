@@ -24,13 +24,76 @@
         - Reorganizar el diseño o modificar propiedades de diseño según la resolución.
      ```
 
+     ```html
+         <h1 id="h1">Título responsive</h1>
+         <!-- Cambiar la orientación de los elementos en pantalla pequeña: de fila a columna -->
+         <p>lorem ... </p>
+         <p>lorem ... </p>
+         <p>lorem ... </p>
+     ```
+     
+     ```css
+         @media screen and (max-width: 600px){
+            h1 {
+               /* Estilos a aplicar cuando la pantalla 
+               es de menos de 600 px */
+            }
+         }
+     ```
+
+     <!-- Galería de fotos -->
+
+     ```html
+         <div id="container">
+            <img src="img.png" alt="Texto alternativo">
+            <img src="img.png" alt="Texto alternativo">
+            <img src="img.png" alt="Texto alternativo">
+            <img src="img.png" alt="Texto alternativo">
+            <img src="img.png" alt="Texto alternativo">
+            <img src="img.png" alt="Texto alternativo">
+            <img src="img.png" alt="Texto alternativo">
+         </div>
+     ```
+
+     ```css
+         #container {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+         }
+
+         @media screen and (max-width: 600px) {
+            flex-direction: column; /* cambia la orientación a columna en móvil */
+         }
+     ```
 3. **Implementación Básica de Efecto Parallax con CSS:**
    - **Explicación:** Crea un efecto parallax simple utilizando CSS para añadir profundidad visual a una página web.
    - **Pseudocódigo:**
      ```plaintext
      1. Crear capas o secciones en HTML con diferentes fondos.
      2. Utilizar posicionamiento absoluto o fijo en CSS para las capas.
-     3. Aplicar transformaciones (como translateZ) en las capas para simular el efecto parallax al hacer scroll.
+     3. Aplicar transformaciones (como translateZ (*opcional*)) en las capas para simular el efecto parallax al hacer scroll. 
+     
+     El efecto parallax se puede hacer con:
+     
+     background-attachment: fixed;
+     ```
+
+     ```html
+         <div id="container">
+            <p> lorem ... </p>
+         </div>
+     ```
+
+     ```css
+         #container {
+            height: 500px;
+            background-image: url("img.png");
+            background-attachment: fixed;
+            /* Más estilos ... */
+         }
      ```
 
 4. **Diseño de Galería de Imágenes con Efectos de Hover:**
@@ -42,6 +105,19 @@
         - Por ejemplo, cambiar el tamaño o la opacidad de la imagen al pasar el mouse.
      ```
 
+     ```css 
+     
+     /* Seleccionar las <img> dentro del container y además especificas que se aplique el estilo cuando se deja el cursor encima (el "hover"): */
+
+     #container img:hover {
+         top: 1px;
+         transform: scale(1.2); /* Se aumenta el 20% el tamaño durante el hover */
+         border: ... ;
+         opacity: ... ;
+         /* más estilos */
+     }
+     ```
+
 5. **Creación de un Menú de Navegación Horizontal Personalizado con CSS:**
    - **Explicación:** Diseña un menú de navegación horizontal utilizando CSS para personalizar colores, bordes y dimensiones.
    - **Pseudocódigo:**
@@ -50,6 +126,25 @@
      2. Aplicar estilos CSS para convertir la lista en un menú horizontal.
         - Establecer display: flex para alinear los elementos en línea.
         - Agregar estilos de borde, fondo, color de texto, márgenes y relleno según sea necesario.
+     ```
+
+     ```html
+         <nav>
+            <ul>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+            </ul>
+         </nav>
+     ```
+
+     ```css
+         nav ul {
+            display: flex;
+            justify-content: ... ;
+            align-items: ... ;
+            /* más estilos */
+         }
      ```
 
 ---
