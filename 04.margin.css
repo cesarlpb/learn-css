@@ -1,2 +1,26 @@
-/* Border */
+/* Margin */
+body {
+  border: 1px solid gray;
+  margin-left: 20px;
+}
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  margin: 25px 50px 75px 100px; /* atajo margin */
+  margin-left: inherit; /* hereda el margen izq de <body> que es su parent */
+  border: 1px solid brown;
+}
 
+/* Cuando no hay border, margin-bottom de un elemento y margin-top del siguiente se "colapsan" en el mayor de ambos y no en la suma */
+.p1 {
+  /* border: 0; */
+  background-color: gray;
+  margin-bottom: 20px;
+}
+.p2 {
+  /* border: 0; */
+  background-color: lightgray;
+  margin-top: 50px;
+}
