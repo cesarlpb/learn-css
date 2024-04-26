@@ -13,11 +13,64 @@ div {
   height: 100px;
 }
 .div-2 {
+  min-width: 200px;
   max-width: 300px;
   /* El ancho máximo es 300px */
   width: 400px;
   min-height: 100px;
+  max-height: 500px;
   /* Aunque se le ponga menos height, min-height nos "asegura" 
   que el elemento no sea más pequeño que cierto valor: */
   height: 50px;
 }
+
+.div-3 {
+  width: 100%;
+  background-color: lightgrey;
+}
+
+.div-4 {
+  text-align: center;
+  /* Ancho completo del dispositivo: */
+  width: 100vw;
+  background-color: lightgrey;
+  /* Le pongo una posición absoluta y puedo indicar los px 
+  que debo mover este elemento para alinearlo */
+  position: absolute;
+  left: 0;
+}
+
+.div-5 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  /* Centrado horizontal y vertical con flex: */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Posición a absoluta: */
+  position: absolute;
+  /* Quitamos las separaciones y colocamos arriba a la derecha (top right): */
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  /* width: */
+  width: 20%;
+  /* Altura máxima del dispositivo */
+  height: 100vh;
+  /* z-index */
+  /* más positivo => más adelante (más fuera de la pantalla) */
+  /* más negativo => más "atrás" (dentro de la pantalla) */
+  /* por defecto => 0 */
+  z-index: -2;
+}
+
+.div-6 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: aqua;
+  width: 20%;
+}
+
