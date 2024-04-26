@@ -1,2 +1,102 @@
 /* Border */
 
+
+/* border-style */
+
+p.dotted {
+    border-style: dotted;
+}
+
+p.dashed {
+    border-style: dashed;
+}
+
+p.solid {
+    border-style: solid;
+}
+
+p.double {
+    border-style: double;
+}
+
+p.groove {
+    border-style: groove;
+}
+
+p.ridge {
+    border-style: ridge;
+}
+
+p.inset {
+    border-style: inset;
+}
+
+p.outset {
+    border-style: outset;
+}
+
+p.none {
+    border-style: none;
+}
+
+p.hidden {
+    border-style: hidden;
+}
+
+p.mix {
+    border-style: dotted dashed solid double;
+}
+
+/* border-width */
+
+p.border {
+    border-style: dashed; /* admite hasta cuatro valores de cada lado con la regla habitual */
+    border-width: medium; /* este valor único se aplicaca en todas las direcciones */
+    border-width: thin medium thick; /* Se aplica con la regla de hasta cuatro valores, uno para cada dirección... */
+    border-color: burlywood brown rgb(107, 30, 30); /* también es una propiedad de hasta cuatro valores */
+    /* Es posible cambiar el estilo de cada lado: */
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    /* Atajo border: */
+    border: 1px solid brown;
+}
+
+p.border-2 {
+    border-left: 5px solid red;
+    padding-left: 5px;
+}
+
+p.border-3 {
+    border-bottom: 5px solid red;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+
+p.border-4 {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 5px;
+}
+p.border-5 {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+}
+p.border-6 {
+    border: 2px solid red;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+p.border-7 {
+    border: 2px solid red;
+    padding: 5px;
+    width: 20px;
+    text-align: center;
+    border-radius: 100px;
+}
