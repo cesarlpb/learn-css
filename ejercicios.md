@@ -158,22 +158,78 @@ Estos pseudocódigos proporcionan una guía básica cómo abordar cada ejercicio
 
 ## Parte 2
 
-6. Diseño de una Barra de Navegación Responsiva:
+6. **Diseño de una Barra de Navegación Responsiva:**
 
-Crea una barra de navegación horizontal que se transforme en un menú de hamburguesa al reducir el tamaño de la pantalla, asegurando que sea funcional y estéticamente agradable en dispositivos móviles y de escritorio.
+Crea una barra de navegación horizontal que se transforme en un *menú de hamburguesa* al reducir el tamaño de la pantalla, asegurando que sea funcional y estéticamente agradable en dispositivos móviles y de escritorio.
 
-7. Efecto de Opacidad en Galería de Imágenes:
+Menú contraído en móvil:
 
-Desarrolla una galería de imágenes donde cada imagen inicialmente muestra una opacidad reducida. La opacidad deberá incrementarse al pasar el ratón sobre cada imagen, destacándola del resto.
+![alt text](image-1.png)
 
-8. Implementación de Video de Fondo en una Página Web:
+Menú expandido en móvil o PC:
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+**Nota:** la funcionalidad de click no hace falta por el momento (se suele hacer con Javascript). El comportamiento de colapsar en móvil y extender en pantalla más grande se puede hacer con media queries.
+
+7. **Efecto de Opacidad en Galería de Imágenes:**
+
+Desarrolla una *galería de imágenes* donde cada imagen inicialmente muestra una opacidad reducida. La opacidad deberá incrementarse al pasar el ratón sobre cada imagen, destacándola del resto.
+
+```plaintext
+   - Crear una cuadrícula de imágenes en HTML.
+   - Aplicar estilos CSS para reducir la opacidad de las imágenes.
+   - Utilizar pseudo-clases :hover para cambiar la opacidad al pasar el ratón.
+      - Por ejemplo, establecer opacity: 0.7 en las imágenes y opacity: 1 en :hover.
+      - También, es habitual expandir o cambiar el tamaño de la imagen durante el hover. Se puede hacer con transform: scale(1.1) por ejemplo.
+```
+
+8. **Implementación de Video de Fondo en una Página Web:**
 
 Coloca un video de fondo en la cabecera de una página web que cubra completamente el área visible sin distorsionarse, asegurando que el texto o los elementos sobre el video sean legibles y estéticamente armoniosos.
 
-9. Estilización de Encabezados con Efectos de Texto CSS:
+```plaintext
+   - Insertar un elemento <video> en HTML con la fuente del video.
+   - Aplicar estilos CSS para posicionar el video en la cabecera y cubrir toda la pantalla. => width: 100%, height: 100%
+   - Asegurarse de que el video no se distorsione y que los elementos de texto sean legibles. => mantener el aspecto del vídeo para que no se pixele, etc.
+```
 
-Crea varios estilos de encabezados (h1, h2, h3) utilizando propiedades CSS como text-shadow, font-weight, y letter-spacing para crear títulos atractivos y únicos para diferentes secciones de una página web.
+```html
+   <video autoplay muted loop id="myVideo">
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+   </video>
+```
 
-10. Diseño de una Sección de Testimonios con Scroll Horizontal:
+```css
+   #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;  /* Ajustar estilos a lo necesario */
+      min-height: 100%; /* Ajustar estilos a lo necesario */
+   }
+
+```
+
+- Explicación de cómo se puede conseguir: https://www.w3schools.com/howto/howto_css_fullscreen_video.asp
+- Vídeos de stock gratis: https://pixabay.com/es/videos/
+
+**Nota:** en Github se pueden subir archivos de hasta 200 MB.
+
+9. **Estilización de Encabezados con Efectos de Texto CSS:**
+
+Crea varios estilos de encabezados (h1, h2, h3) utilizando propiedades CSS como `text-shadow`, `font-weight`, y `letter-spacing` para crear títulos atractivos y únicos para diferentes secciones de una página web.
+
+- Algunas otras propiedades que puede ser util modificar: `font-family`, `font-style`, `font-size`, etc.
+- Ejemplo de headers: https://freefrontend.com/css-headers/
+
+10. **Diseño de una Sección de Testimonios con Scroll Horizontal:**
 
 Diseña una sección de testimonios en la que los comentarios de los usuarios se desplacen horizontalmente. Utiliza `overflow-x: auto` para permitir el desplazamiento y `display: flex` para alinear los testimonios de manera horizontal.
+
+- Ejemplo de esta sección: https://freefrontend.com/css-testimonials/
+
+**Nota:** la funcionalidad de click podemos dejarla para más adelante cuando veamos Javascript.
