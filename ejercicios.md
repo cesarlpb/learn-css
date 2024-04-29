@@ -1,5 +1,7 @@
 # Ejercicios de CSS
 
+## Parte 1
+
 1. **Estilización de un Contenedor con CSS:**
    - **Explicación:** Crea un contenedor HTML y aplica estilos CSS para definir márgenes, relleno, fondo, bordes y dimensiones.
    - **Pseudocódigo:**
@@ -152,3 +154,26 @@
 **Nota:** se puede usar archivos nuevos en cada ejercicio (p.e. `ej-1.html`, `ej-1.css`, etc.) o se puede usar el layout responsive elaborado en [responsive_layout](https://github.com/cesarlpb/learn-html/blob/main/responsive_layout.html).
 
 Estos pseudocódigos proporcionan una guía básica cómo abordar cada ejercicio usando HTML y CSS. 
+
+
+## Parte 2
+
+6. Diseño de una Barra de Navegación Responsiva:
+
+Crea una barra de navegación horizontal que se transforme en un menú de hamburguesa al reducir el tamaño de la pantalla, asegurando que sea funcional y estéticamente agradable en dispositivos móviles y de escritorio.
+
+7. Efecto de Opacidad en Galería de Imágenes:
+
+Desarrolla una galería de imágenes donde cada imagen inicialmente muestra una opacidad reducida. La opacidad deberá incrementarse al pasar el ratón sobre cada imagen, destacándola del resto.
+
+8. Implementación de Video de Fondo en una Página Web:
+
+Coloca un video de fondo en la cabecera de una página web que cubra completamente el área visible sin distorsionarse, asegurando que el texto o los elementos sobre el video sean legibles y estéticamente armoniosos.
+
+9. Estilización de Encabezados con Efectos de Texto CSS:
+
+Crea varios estilos de encabezados (h1, h2, h3) utilizando propiedades CSS como text-shadow, font-weight, y letter-spacing para crear títulos atractivos y únicos para diferentes secciones de una página web.
+
+10. Diseño de una Sección de Testimonios con Scroll Horizontal:
+
+Diseña una sección de testimonios en la que los comentarios de los usuarios se desplacen horizontalmente. Utiliza `overflow-x: auto` para permitir el desplazamiento y `display: flex` para alinear los testimonios de manera horizontal.
