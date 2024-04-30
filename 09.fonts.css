@@ -15,8 +15,8 @@
 .font-5 {
 	font-family: "Jacquard 12 Charted", system-ui;
 	/* font-family: fantasy; */
-  	font-weight: 400;
-  	font-style: normal
+	font-weight: 400;
+	font-style: normal;
 }
 .arial {
 	font-family: Arial, Helvetica, sans-serif;
@@ -68,6 +68,7 @@ p.oblique {
 	font-style: normal;
 }
 
+/* Semibold */
 .roboto-medium {
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
@@ -80,6 +81,7 @@ p.oblique {
 	font-style: normal;
 }
 
+/* Bolder */
 .roboto-black {
 	font-family: "Roboto", sans-serif;
 	font-weight: 900;
@@ -131,6 +133,7 @@ p.small {
 	font-variant: small-caps;
 }
 p.caps {
+	/* text-transform: lowercase; */
 	text-transform: uppercase;
 }
 
@@ -142,8 +145,9 @@ p.fs-medium {
 	font-size: medium;
 }
 p.fs-large {
-	font-size:large;
-	/* font-size: 1.5em; */
+	font-size: large;
+	/* Se mide en proporción al tamaño fuente por defecto que suele ser 16px */
+	font-size: 1.5em;
 }
 p.responsive{
 	font-size: 5vw;
@@ -163,7 +167,7 @@ p.sofia {
 	padding: 1em;
 }
   
-.container.h1 {
+.container h1 {
 	font-family: Georgia, serif;
 	font-size: 60px;
 	color: white;
