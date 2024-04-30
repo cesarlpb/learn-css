@@ -1,0 +1,185 @@
+/* Fonts */
+
+.font-1 {
+	font-family: serif;
+}
+.font-2 {
+	font-family: sans-serif;
+}
+.font-3 {
+	font-family: monospace;
+}
+.font-4 {
+	font-family: cursive;
+}
+.font-5 {
+	font-family: "Jacquard 12 Charted", system-ui;
+	/* font-family: fantasy; */
+  	font-weight: 400;
+  	font-style: normal
+}
+.arial {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.verdana {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tahoma {
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+.times {
+	font-family: 'Times New Roman', Times, serif;
+}
+.georgia {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* font-style */
+
+p.normal {
+	font-style: normal;
+}
+  
+p.italic {
+	font-style: italic;
+}
+
+p.oblique {
+	font-style: oblique;
+}
+
+/* font-weight */
+
+.roboto-thin {
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.roboto-light {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.roboto-regular {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.roboto-medium {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.roboto-bold {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.roboto-black {
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.roboto-thin-italic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.roboto-light-italic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.roboto-regular-italic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.roboto-medium-italic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.roboto-bold-italic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.roboto-black-italic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+}
+
+/* font-variant */
+
+p.normal {
+	font-variant: normal;
+}
+p.small {
+	font-variant: small-caps;
+}
+p.caps {
+	text-transform: uppercase;
+}
+
+/* font-size */
+p.fs-small {
+	font-size: small;
+}
+p.fs-medium {
+	font-size: medium;
+}
+p.fs-large {
+	font-size:large;
+	/* font-size: 1.5em; */
+}
+p.responsive{
+	font-size: 5vw;
+}
+p.sofia {
+	font-family: "Sofia", sans-serif;
+	font-size: 7vw;
+	text-shadow: 3px 3px 3px #ababab;
+}
+
+/* Combinación de fuentes: */
+.container {
+	background-color: black;
+	font-family: Verdana, sans-serif;
+	font-size: 16px;
+	color: gray;
+	padding: 1em;
+}
+  
+.container.h1 {
+	font-family: Georgia, serif;
+	font-size: 60px;
+	color: white;
+}
+
+a {
+	color: black;
+	display: inline-block;
+	margin: 0.5em;
+}
+
+/* Atajo font: */
+p.a {
+	font: 20px Arial, sans-serif;
+}
+  
+p.b {
+	font: italic small-caps bold 12px/30px Georgia, serif;
+}
