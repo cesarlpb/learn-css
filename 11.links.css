@@ -1,5 +1,10 @@
 /* Links */
 
+body {
+    padding: 1rem;
+    background-color: beige!important;
+}
+
 a:link {
     color: black;
     text-decoration: none;
