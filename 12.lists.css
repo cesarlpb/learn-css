@@ -1,7 +1,8 @@
 /* Lists */
 
 body {
-    background-color: rgb(210, 210, 157);
+    background-color: beige;
+    padding: 1rem;
 }
 
 ul.a {
@@ -9,7 +10,7 @@ ul.a {
 }
 
 ul.b {
-    list-style-type:lower-alpha;
+    list-style-type: lower-alpha;
 }
 
 ol.c {
@@ -17,7 +18,7 @@ ol.c {
 }
 
 ol.d {
-    list-style-type: lower-alpha;
+    list-style-type: upper-alpha;
 }
 ul.e {
     list-style: none; /* Eliminar el marcador de lista estándar */
@@ -66,6 +67,7 @@ ul.h {
 }
 
 ul.i {
+    /* atajo */
     list-style: square inside url("pepe-icon.png");
 }
 
