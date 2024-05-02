@@ -1,2 +1,9 @@
 /* Iconos */
 
+body {
+  padding: 1rem;
+  background-color: beige!important;
+}
+.svg {
+  width: 50px;
+}
