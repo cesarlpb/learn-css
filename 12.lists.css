@@ -1,0 +1,93 @@
+/* Lists */
+
+body {
+    background-color: rgb(210, 210, 157);
+}
+
+ul.a {
+    list-style-type: circle;
+}
+
+ul.b {
+    list-style-type:lower-alpha;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
+ul.e {
+    list-style: none; /* Eliminar el marcador de lista estándar */
+    padding-left: 20px; /* Añadir espacio para la imagen */
+}
+
+ul.e li {
+    display: flex; /* Usar flexbox en los elementos <li> */
+    align-items: center; /* Alinear verticalmente los elementos */
+    margin-bottom: 10px;
+}
+
+ul.e li::before {
+    content: ""; /* Crear un seudoelemento para la imagen */
+    width: 25px; /* Ancho de la imagen */
+    height: 22px; /* Alto de la imagen */
+    padding: 1px;
+    background-image: url('pepe-icon.png'); /* URL de la imagen */
+    background-size: cover; /* Ajustar tamaño de la imagen */
+    margin-right: 8px; /* Espacio entre la imagen y el contenido */
+}
+
+/* Posición de bullet points */
+
+ul.f, ul.g {
+    border: 1px solid brown;
+}
+ul.f li, ul.g li {
+    border: 1px dashed rgb(183, 142, 88);
+    margin: 5px 0;
+}
+
+ul.f {
+    list-style-position: outside;
+    padding-left: 20px;
+}
+ul.g {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+ul.h {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.i {
+    list-style: square inside url("pepe-icon.png");
+}
+
+.color-2 {
+	background: #ff9999;
+	padding: 20px;
+}
+
+.color {
+	background: #3399ff;
+	padding: 20px;
+}
+
+.color-2 li {
+	background: #ffe5e5;
+	color: darkred;
+	padding: 5px;
+	margin-left: 35px;
+}
+
+.color li {
+	background: #cce5ff;
+	color: darkblue;
+	margin: 5px;
+}

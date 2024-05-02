@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="14.propiedades.css">
+</head>
+
+<body>
+  <h1>Propiedades CSS</h1>
+
+  <h2>Display</h2>
+
+  <h3>inline</h3>
+  <p>inline no salta línea</p>
+  <div>
+    <img src="pedro pedro pedro.jpeg" width="100" alt="pedro pedro pedro">
+    <img src="pedro pedro pedro.jpeg" width="100" alt="pedro pedro pedro">
+    <img src="pedro pedro pedro.jpeg" width="100" alt="pedro pedro pedro">
+  </div>
+  <h3>block</h3>
+  <p>block salta línea siempre</p>
+  <div>
+    <img class="d-block my-1" src="pedro pedro pedro.jpeg" width="100" alt="pedro pedro pedro">
+    <img class="d-block my-1" src="pedro pedro pedro.jpeg" width="100" alt="pedro pedro pedro">
+    <img class="d-block my-1" src="pedro pedro pedro.jpeg" width="100" alt="pedro pedro pedro">
+  </div>
+
+  <h3>none y hidden</h3>
+
+  <p>display none oculta sin ocupar espacio y visibility hidden oculta ocupando espacio:</p>
+  <p class="d-none">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eius.</p>
+  <p class="invisible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eius.</p>
+
+  <h2>max/min-width/height</h2>
+
+  <div class="div-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, assumenda?</div>
+  <div class="div-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, assumenda?</div>
+  <div class="div-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, assumenda?</div>
+
+  <h2>Position</h2>
+
+  <div class="relative">relative</div>
+  <div class="absolute">absolute</div>
+  <div class="fixed">fixed</div>
+  <div class="sticky">sticky</div>
+
+  <h2>Z-index</h2>
+
+  <div id="container">
+    <h3>Pero Pedro Pedro</h3>
+    <img src="pedro pedro pedro.jpeg" width="300" alt="">
+  </div>
+
+  <div id="video">
+    <h2>Pedro Pedro Pedro</h2>
+    <video muted loop autoplay controls>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div id="video-container">
+    <!-- Insertar el iframe del video de YouTube aquí -->
+    <div id="iframe-overlay"></div>
+  </div>
+
+  <script>
+    window.onload = function() {
+    var videoContainer = document.getElementById('video-container');
+    var iframe = document.createElement('iframe');
+    iframe.src = "https://www.youtube.com/embed/UzFZR2dRsSY?autoplay=1&controls=0&loop=1&mute=1";
+    iframe.style.zIndex = "-1";
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.setAttribute('autoplay', '');
+    iframe.setAttribute('muted', '');
+    iframe.setAttribute('loop', '');
+    videoContainer.appendChild(iframe);
+  };
+  </script>
+
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/UzFZR2dRsSY?si=EZIdrO7CEYdekTfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+  <h2>Overflow</h2>
+
+  <p>Se puede controlar el scroll en horizontal, vertical o ambos: <code>overflow-x</code>, <code>overflow-y</code>, <code>overflow</code>.</p>
+
+  <p class="overflow">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae aliquam tempore eum ab cumque. Unde nobis in iure eius doloribus molestias magnam id deserunt aliquam ea dolorem fuga similique beatae sit, non architecto tempora accusantium, autem dicta. Aliquam quod accusantium sint voluptate illum eum corporis totam est, recusandae alias magni numquam quam amet modi laboriosam iure. Tenetur ipsam culpa nemo tempore incidunt? Fugit cumque est iste blanditiis aliquid quod quisquam quibusdam nostrum neque odio modi consequatur in, inventore, totam maxime veniam temporibus natus, odit facere eveniet suscipit quia nisi. Optio tempora eaque ut doloremque, fuga commodi quasi omnis ab rerum.</p>
+
+  <h2>Float</h2>
+
+  <div class="clearfix">
+    <img class="float-right" src="pedro pedro pedro.jpeg" alt="pedro" width="100px">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit tenetur quia, quod voluptates iste repellat, eligendi perspiciatis ea excepturi optio porro ducimus, rem inventore laudantium mollitia asperiores. Et, officiis!
+  </div>
+
+  <h3>Ejemplos de float</h3>
+
+  <div class="clearfix">
+    <div class="box" style="background-color:#bbb">
+    <p>Some text inside the box.</p>
+    </div>
+    <div class="box" style="background-color:#ccc">
+    <p>Some text inside the box.</p>
+    </div>
+    <div class="box" style="background-color:#ddd">
+    <p>Some text inside the box.</p>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <div class="box-2" style="background-color:#bbb">
+    <p>Some text inside the box.</p>
+    </div>
+    <div class="box-2" style="background-color:#ccc">
+    <p>Some text inside the box.</p>
+    </div>
+    <div class="box-2" style="background-color:#ddd">
+    <p>Some text inside the box.</p>
+    </div>
+  </div>
+
+  <div class="img-clearfix">
+    <div class="img-container">
+    <img src="bongo-cat.png" alt="Italy" style="width:100%">
+    </div>
+    <div class="img-container">
+    <img src="nyan-cat.png" alt="Forest" style="width:100%">
+    </div>
+    <div class="img-container">
+    <img src="knuckles.jpeg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <h2>Inline-block</h2>
+
+  <div class="inline-block-container">
+    <img src="bongo-cat.png" alt="Bongo cat">
+    <img src="bongo-cat.png" alt="Bongo cat">
+    <img src="bongo-cat.png" alt="Bongo cat">
+    <img src="bongo-cat.png" alt="Bongo cat">
+    <img src="bongo-cat.png" alt="Bongo cat">
+  </div>
+
+  <h2>Align</h2>
+
+  <div class="align-container">
+    <h3>Bongo Cat</h3>
+    <img src="bongo-cat.png" alt="bongo time!">
+    <p>Bongo cat!!!</p>
+  </div>
+
+  <div class="align-container-right">
+    <h3>Bongo Cat</h3>
+    <img src="bongo-cat.png" alt="bongo time!">
+    <p>Bongo cat!!!</p>
+  </div>
+
+  <div class="align-container-left">
+    <h3>Bongo Cat</h3>
+    <img src="bongo-cat.png" alt="bongo time!">
+    <p>Bongo cat!!!</p>
+  </div>
+
+  <h2>CSS Combinators</h2>
+
+  <div class="combinator">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, cumque?</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div>
+      <p>Lorem, ipsum dolor. <a href="#">enlaces no child directos</a></p>
+      <p>Lorem, ipsum dolor. <a href="#">enlaces no child directos</a></p>
+      <p>Lorem, ipsum dolor. <a href="#">enlaces no child directos</a></p>
+    </div>
+    <img src="bongo-cat.png" alt="Bongo" width="200">
+    <a href="#">Bongooooo!</a>
+    <ul>
+      <li>1</li>
+      <li><ul>
+        <li>a</li>
+        <li>b</li>
+      </ul></li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+  </div>
+
+  <h3>descendant selector (space)</h3>
+  
+  <h3>child selector (>)</h3>
+
+  <h3>adjacent sibling selector (+)</h3>
+
+  <h3>general sibling selector (~)</h3>
+
+</body>
+
+</html>

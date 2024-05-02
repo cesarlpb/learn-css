@@ -1,0 +1,82 @@
+/* Pseudo clases */
+
+body {
+  padding: 1rem;
+  background-color: beige;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: gray;
+  text-decoration: line-through;
+}
+
+/* mouse over link */
+a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 1px;
+  font-size: 1.1rem;
+  background-color: rgb(74, 74, 74);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* selected link */
+a:active {
+  color: rgb(192, 187, 187);
+}
+
+div {
+  background-color: lightgrey;
+  padding: 1rem;
+}
+div p {
+  visibility: hidden;
+}
+div:hover p {
+  visibility: visible;
+}
+
+/* Elementos li: */
+li:first-child {
+  color: red;
+}
+li:last-child {
+  color: blue;
+}
+
+/* CSS empieza a contar en 1: */
+
+li:nth-child(2) {
+  color: green;
+}
+
+/* clase "li" */
+
+.li:first-of-type {
+  color: purple;
+}
+.li:last-of-type {
+  color: orange;
+}
+.li:nth-last-of-type(2) {
+  color: pink;
+}
+
+/* Ejemplo con pseudo-clase "not" */
+
+.li-2:not(:first-of-type) {
+  color: brown;
+}
+
+q:lang(no) {
+  quotes: "''" "''";
+}
+
+/* Más sobre pseudo-clases: https://www.w3schools.com/css/css_pseudo_classes.asp */
