@@ -13,6 +13,7 @@ p::first-letter {
 
 p::first-line{
   font-variant: small-caps;
+  /* text-decoration: underline; */
 }
 
 p {
