@@ -32,6 +32,19 @@ th, td {
     border-bottom: 1px solid #111;
 }
 
-tr:hover {
+tr:hover:not(:first-of-type) {
+    background-color: coral;
+}
+tr:first-of-type {
+    background-color: #111;
+    color: white;
+}
+
+/* Arreglo el hover y bg-color de tbody > tr: */
+tbody tr:first-of-type {
+    background-color: unset;
+    color: black;
+}
+tbody tr:hover:first-of-type {
     background-color: coral;
 }
