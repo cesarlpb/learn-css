@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplos de Selectores</title>
+  <style>
+    body {
+      background-color: rgb(234, 218, 198);
+      font-family:Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Selector de id -->
+  <style>
+    h1 {
+      color:red;
+    }
+    /* ... */
+    #h1 {
+      color: brown; /* -> tiene más prioridad que el anterior*/
+    }
+  </style>
+  <h1 id="h1">Ejemplos de selectores</h1>
+  <h2>id</h2>
+
+  <!-- Selector de clase -->
+  <h2>clase</h2>
+  <style>
+    .parrafos {
+      text-align: center;
+    }
+  </style>
+  <p class="parrafos">Lorem, ipsum dolor.</p>
+  <p class="parrafos">Lorem, ipsum dolor.</p>
+  <p class="parrafos">Lorem, ipsum dolor.</p>
+
+  <!-- Selector de etiquetas -->
+  <h2>etiquetas</h2>
+  <style>
+    h2 {
+      font-size:x-large; /* -> se aplica a todas las etiquetas h2 */
+    }
+  </style>
+
+  <!-- Otros -->
+  <h2>Otros selectores</h2>
+
+    <!-- varios elementos -->
+    <style>
+    h2, h1 {
+      text-decoration:underline;
+    }
+    </style>
+
+    <!-- Parent child -->
+
+    <!-- div o division es una etiqueta "comodín" que no es 
+     semántica => bloque // coloca salto de línea -->
+    <style>
+      div {
+        /* colocamos bordes y color de fondo para "ver" las 
+        cajas de div*/
+        border: 1px solid black;
+        background-color: lightgray;
+        padding: 5px; /* espaciado interno para el div */
+      }
+      div > p {
+        text-align: center;
+        border: 1px solid brown;
+        background-color: gray;
+        color: white;
+        padding: 5px;
+      }
+      div > p > a {
+        color: tomato;
+      }
+    </style>
+
+    <p>Texto en p dentro de div 
+      <a href="#">Texto de enlace en azul (fuera de div)</a>.
+    </p>
+
+    <div>
+      Texto en primer div
+      <p>Texto en p dentro de div 
+        <a href="#">Texto de enlace en rojo</a>.
+      </p>
+    </div>
+    <div>
+      Otro div
+      <p>Otro p dentro de un div</p>
+    </div>
+    <div>
+      Incluso otro div
+      <p>p > div</p>
+    </div>
+
+    <!-- Elemento con clase -->
+
+    <style>
+      .miClase {
+        border: 0; /* quitamos el borde */
+        background-color: unset; /* quitamos el estilo */
+      }
+      .miOtraClase {
+        color: red;
+      }
+      /* estilos de miOtraClase solo para <p> */
+      p.miOtraClase {
+        background-color: rgb(50, 50, 50); /* tonalidad de negro */
+        border: 0; /* quitar el borde */
+      }
+    </style>
+    <div class="miClase">
+      <p class="miOtraClase">Otro p en div</p>
+      <p class="miOtraClase">Otro p en div</p>
+      <p class="miOtraClase">Otro p en div</p>
+    </div>
+    <div class="miOtraClase">div de miOtraClase</div>
+</body>
+</html>
