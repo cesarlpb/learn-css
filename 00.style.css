@@ -1,1 +1,11 @@
 /* CSS */
+
+/* Se usa un archivo CSS externo para centralizar los estilos
+aplicados a una página o a una parte de la página */
+
+body {
+  /* Aplica las fuentes en orden para todo el cuerpo del documento */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:rgb(169, 84, 84); /* solo se aplica a elementos que 
+  no tengan el color especificado en el html */
+}

@@ -10,7 +10,25 @@
   <style>
     /* CSS con selectores */
     h1 {
+      /* color marrón y centrado */
       color: brown;
+      text-align: center;
+    }
+    h2 {
+      /* otro tono de marrón y subrayado */
+      color:rgb(101, 61, 10);
+      text-decoration: underline;
+      text-align: center;
+    }
+    /* Selector de id => cada id debe ser único en el documento */
+    #p1 {
+      text-align: center;
+    }
+    /* Selector de clase "p" => puede haber varios elementos */
+    .p {
+      /* centrado y mayúsculas */
+      text-align: center; 
+      text-transform: uppercase;
     }
   </style>
 
@@ -27,6 +45,15 @@
   <h1 style="text-align: center;">CSS</h1>
   <!-- Aumentamos tamaño de fuente y centramos: -->
   <p style="font-size:large; text-align:center;">Añadimos estilos al HTML con CSS.</p>
+
+  <h2>Selectores de CSS</h2>
+
+  <p>Hay algunos tipos de selectores en CSS.</p>
+  
+  <p id="p1" class="p">id</p>
+  <p id="p2" class="p">clase</p>
+  <p id="p3" class="p">etiquetas</p>
+  <p id="p4" class="p">específicos</p>
 
 </body>
 </html>
