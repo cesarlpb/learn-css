@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position y Anchor</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(150, 150, 150);
+    }
+    .container {
+      padding: 1em;
+    }
+    footer {
+      background-color: lightgray;
+      padding: 1em;
+      /* position */
+      position: absolute;
+      width: 100%;
+      /* Ajusta el ancho al 100% sin desbordar <- IMPORTANTE */
+      box-sizing: border-box;
+      bottom: 0;
+
+      & p {
+        /* width: 90%; */
+        width: max-content; /* el <p> se ajusta al contenido */
+        margin: 1em auto;
+        box-sizing: content-box;
+      }
+    }
+    #caja {
+      width: 300px;
+      box-sizing: border-box;
+      border: 1px solid black;
+      margin: 1em auto;
+      padding: 1em;
+      text-align: center;
+    }
+    #anchor {
+      position: absolute;
+      top: 50px;
+      right: 100px;
+      background-color: burlywood;
+      padding: 1em;
+      /* nombramos el ancla: */
+      anchor-name: --a1;
+    }
+    #label {
+      position: absolute;
+      position-anchor: --a1;
+      position-area: bottom left;
+
+      background-color: brown;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Position y Anchor</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Perferendis quibusdam cum magni cupiditate?</p>
+    <p>Doloribus ab eius facilis quo?</p>
+  </div>
+  <div id="caja">
+    Caja de 300px
+  </div>
+
+  <div id="anchor">
+    Ancla
+  </div>
+  <div id="label">
+    Label del ancla
+  </div>
+  <footer>
+    <p>Contenido del footer. Contenido del footer. Contenido del footer.</p>
+  </footer>
+</body>
+</html>
