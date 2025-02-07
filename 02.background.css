@@ -44,11 +44,16 @@
 
 .bg-css, .bg-css-repeat, .bg-css-fixed {
   background-image: url("bg-css.webp");
+  
+  /* Controlamos el tamaño de la imagen: */
   height: 300px;
+  /* El ancho escalado sería: */
+  /* width: 480px; */
+
   /* Escalamos al tamaño del elemento: */
   background-size: cover;
   /* Movemos la imagen: */
-  background-position: top right;
+  background-position: center center;
   /* Colocamos p en la parte baja del div: */
   display: flex;
   align-items: end;
@@ -67,9 +72,9 @@
 
 .bg-css-repeat {
   background-image: url("css-small.png");
-  background-size: contain;
+  background-size:contain;
   /* Repeat solo en eje horizontal: */
-  background-repeat: repeat-x;
+  background-repeat:repeat-x;
 }
 
 /* bg repeat */
