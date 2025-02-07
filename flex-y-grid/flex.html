@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: rgb(185, 46, 46);
+      color: #d0d0d0;
+    }
+    a {
+      color: #d0d0d0;;
+    }
+    .container {
+      width: 100vw;
+      height: 100vh;
+      padding: 1em;
+      background-color: burlywood;
+      border: 3px solid brown;
+      /* flex */
+      display: flex; 
+      /* flex-direction: row; -> por defecto es fila */
+      flex-direction: column; 
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: start;
+    }
+    /* 
+    parent -> child 
+    solo afecta a los div DENTRO de elemento de clase "container"
+    */
+    .container > div {
+      width: 100px;
+      margin: 1em;
+      padding: 1em;
+      text-align: center;
+    }
+    .container {
+      /* cosas de container */
+      /* selector anidado de div child DENTRO de "container" */
+      & div {
+        background-color: rgb(233, 155, 53);
+      }
+    }
+    div { 
+      border: 2px solid black;
+      height: 100px;
+    }
+    #uno {
+      order: 1;
+    }
+    #dos {
+      order: 2;
+    }
+    #tres {
+      order: 3;
+    }
+  </style>
+</head>
+<body>
+  <h1>flex</h1>
+  <p>Juego de Flex en <a href="https://flexboxfroggy.com/#es" target="_blank">Flex Froggy</a>.</p>
+  <div class="container">
+    <div id="uno">1</div>
+    <div id="dos">2</div>
+    <div id="tres">3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+  </div>
+</body>
+</html>
