@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid en CSS</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: burlywood;
+      color: #505050;
+    }
+    h1 {
+      text-align: center;
+      margin: 2em auto;
+    }
+    a {
+      color: #d0d0d0;;
+    }
+    .container {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      background-color: gray;
+      /* gap */
+      row-gap: 1em;
+      column-gap: 2em;
+    }
+    .container > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 1em;
+      background-color: burlywood;
+      border: 2px dashed rgb(80, 80, 80);
+    }
+    div > p {
+      height: 100px;
+      width: 100px;
+      padding: 1em;
+      border: 2px solid brown;
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grid</h1>
+  <div class="container">
+    <div>
+      <p>1</p>
+      <p>1.1</p>
+    </div>
+    <div>
+      <p>2</p>
+      <p>2.1</p>
+      <p>2.2</p>
+    </div>
+    <div><p>3</p></div>
+    <div><p>4</p></div>
+    <div><p>5</p></div>
+    <div><p>6</p></div>
+    <div><p>7</p></div>
+    <div><p>8</p></div>
+    <div><p>9</p></div>
+    <div><p>10</p></div>
+  </div>
+</body>
+</html>
